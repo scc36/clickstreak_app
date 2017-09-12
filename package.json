@@ -1,0 +1,19 @@
+{
+  "name": "clickstreak",
+  "version": "1.0.0",
+  "description": "React frontend to the button click counter",
+  "main": "react_src/index.js",
+  "scripts": {
+    "build": "browserify -t [ babelify --presets [react] ] react_src/* -o buttonclicks/static/js/clickstreak.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}

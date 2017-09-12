@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Button Click Streak</title>
+  <meta name="Click the button" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% load static %}
+  <!-- Bootstrap minified CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <!-- theme -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}">
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+</head>
+
+<body>
+  <h1>Click Streak Counter</h1>
+  <div class="container">
+    <div id="clickcounter"></div>
+    <div id="clickbutton"></div>
+  </div>
+  <script src="{% static 'js/clickstreak.js' %}"></script>
+</body>
+</html>

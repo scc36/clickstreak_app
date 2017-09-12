@@ -1,0 +1,5 @@
+- model: buttonclicks.StreakCount
+  pk: "high score"
+  fields:
+    user: "high score"
+    click_count: 0
